@@ -1,0 +1,14 @@
+<launch>
+
+  <!-- Laser scan -->
+  <node pkg="teraranger_hub" type="teraranger_evo" name="tr_hub_parser">
+	   <remap from="/teraranger_evo" to="/ranges"/>
+  </node>
+  <node pkg="tr_hub_converter" type="tr_hub_converter.py" name="tr_hub_converter">
+    <param name="converter_mode" value="point_cloud" />
+  </node>
+  <!-- Launching Mapping-->
+  <include file="$(find mapping_with_tower)/launch/includes/octomap_mapping.xml"/>
+
+</launch>
+
