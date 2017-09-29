@@ -51,10 +51,13 @@ After that you have to launch two different files in two different terminals:
 
 *!WARNING! When opening a new terminal, don't forget to source the devel !WARNING!* 
 
-- The bring up 
-`roslaunch teraranger_array_tutorials kobuki_bringup.launch` 
+- The bring up: 
+`roslaunch teraranger_array_tutorials kobuki_bringup.launch`  
+
+Or if you want to simulate on Gazebo:
+`roslaunch teraranger_array_tutorials kobuki_gazebo_bringup.launch` 
  
-- The driver for the teraranger_one tower
+- The driver for the teraranger_one tower:
 `roslaunch teraranger_array_tutorials gmapping.launch` 
 
 You can modify the parameters of the gmapping package into the teraranger_array_tutorials package:
