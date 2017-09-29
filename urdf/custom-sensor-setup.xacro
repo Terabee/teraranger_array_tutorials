@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot name="robopac_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find teraranger_description)/urdf/base_hub.urdf.xacro"/>
+  <xacro:include filename="$(find teraranger_description)/urdf/teraranger_one.urdf.xacro"/>
+
+	<!--CUSTOM CONFIG-->
+  <xacro:macro name="custom-sensor-setup">
+    <base_hub multi_hub="0" hub_id='0' parent="base_link" x="0" y="0" z="0.26" roll="0" pitch="0" yaw="0"/>
+    <teraranger_one multi_hub="0" hub_id='0' id="0" x="0.0600" y="0" z="0" roll="0" pitch="0" yaw="0.0" gaussian_noise="0"/>
+    <teraranger_one multi_hub="0" hub_id='0' id="1" x="0.0424" y="0.0424" z="0" roll="0" pitch="0" yaw="0.785" gaussian_noise="0"/>
+    <teraranger_one multi_hub="0" hub_id='0' id="2" x="0.000" y="0.0600" z="0" roll="0" pitch="0" yaw="1.571" gaussian_noise="0"/>
+    <teraranger_one multi_hub="0" hub_id='0' id="3" x="-0.0424" y="0.0424" z="0" roll="0" pitch="0" yaw="2.356" gaussian_noise="0"/>
+    <teraranger_one multi_hub="0" hub_id='0' id="4" x="-0.0600" y="0.000" z="0" roll="0" pitch="0" yaw="3.142" gaussian_noise="0"/>
+    <teraranger_one multi_hub="0" hub_id='0' id="5" x="-0.0424" y="-0.0424" z="0" roll="0" pitch="0" yaw="-2.356" gaussian_noise="0"/>
+    <teraranger_one multi_hub="0" hub_id='0' id="6" x="0.000" y="-0.0600" z="0" roll="0" pitch="0" yaw="-1.571" gaussian_noise="0"/>
+    <teraranger_one multi_hub="0" hub_id='0' id="7" x="0.0424" y="-0.0424" z="0" roll="0" pitch="0" yaw="-0.785" gaussian_noise="0"/>
+  </xacro:macro>
+
+</robot>
