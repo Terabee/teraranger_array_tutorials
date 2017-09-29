@@ -8,7 +8,7 @@
   <arg name="3d_sensor" value="tera-tower"/>
 
 
-  <include file="$(find mapping_with_tower)/launch/includes/kobuki.launch.xml">
+  <include file="$(find teraranger_array_tutorials)/launch/includes/kobuki.launch.xml">
     <arg name="base" value="$(arg base)"/>
     <arg name="stacks" value="$(arg stacks)"/>
     <arg name="3d_sensor" value="$(arg 3d_sensor)"/>

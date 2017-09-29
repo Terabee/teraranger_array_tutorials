@@ -1,6 +1,6 @@
 <launch>
 
   <!-- Launching Mapping-->
-  <include file="$(find mapping_with_tower)/launch/includes/octomap_mapping.xml"/>
+  <include file="$(find teraranger_array_tutorials)/launch/includes/octomap_mapping.xml"/>
 
 </launch>
