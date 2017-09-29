@@ -2,15 +2,8 @@
   <arg name="custom_param_file" default="$(find mapping_with_tower)/param/kobuki_param.yaml"/>
   <arg name="scan_topic" value="/scan" />
 
-  <!-- Laser scan -->
-  <node pkg="teraranger_array" type="teraranger_one" name="teraranger_one_node"/>
-  <!--<node pkg="teraranger_array" type="teraranger_evo" name="teraranger_evo_node"/>-->
-
-  <node pkg="tr_hub_converter" type="tr_hub_converter.py" name="ranges_to_scan"/>
-
   <!-- Map server -->
   <arg name="map_file" default="$(find mapping_with_tower)/maps/map.yaml)"/>
-
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
   <!-- AMCL -->

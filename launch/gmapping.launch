@@ -1,12 +1,5 @@
 <launch>
 
-  <!-- Laser scan -->
-  <node pkg="teraranger_array" type="teraranger_one" name="teraranger_one_node"/>
-
-  <node pkg="tr_hub_converter" type="tr_hub_converter.py" name="tr_hub_converter">
-    <param name="converter_mode" value="laser_scan" />
-  </node>
-
   <!-- Launching Mapping-->
   <include file="$(find mapping_with_tower)/launch/includes/gmapping.launch.xml"/>
 
