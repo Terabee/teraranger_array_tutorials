@@ -16,14 +16,14 @@
 
   <node pkg="teraranger_array" type="teraranger_one" name="teraranger_array_node">
     <param name="portname" value="/dev/ttyACM0"/>
-  <node/>
+  </node>
 
   <node pkg="teraranger_array_converter" type="teraranger_array_converter.py" name="array_to_laserscan_converter">
-    <param name="converter_mode" value="laser_scan" />
+    <param name="converter_mode" value="laser_scan"/>
   </node>
 
   <node pkg="teraranger_array_converter" type="teraranger_array_converter.py" name="array_to_pointcloud_converter">
-    <param name="converter_mode" value="point_cloud" />
+    <param name="converter_mode" value="point_cloud"/>
   </node>
 
 </launch>
