@@ -20,6 +20,6 @@
   <teraranger_tower multi_hub="false" hub_id='0' parent="base_link" x="0" y="0" z="0.5" roll="0" pitch="0" yaw="0" />
 
   <!-- Custom layout defined in sensor-setup.xacro -->
-  <custom-sensor-setup/>
+  <!-- <custom-sensor-setup/> -->
 
 </robot>
