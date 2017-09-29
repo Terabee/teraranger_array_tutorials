@@ -9,8 +9,8 @@
   <license>TODO</license>
 
   <!-- Url tags are optional, but multiple are allowed, one per tag -->
-  <url type="repository" https://github.com/Terabee/teraranger_array_tutorials</url>
-  <url type="website" http://wiki.ros.org/teraranger_array_tutorials</url>
+  <url type="repository">https://github.com/Terabee/teraranger_array_tutorials</url>
+  <url type="website">http://wiki.ros.org/teraranger_array_tutorials</url>
 
   <author email="pierre-louis.kabaradjian@terabee.com">Kabaradjian Pierre-Louis</author>
   <author email="baptiste.potier@terabee.com">Baptiste Potier</author>
